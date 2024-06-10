@@ -1,11 +1,13 @@
 //This program is to understand the structure of linked lists
 //To create a linked lists, we need Node consisting of data and reference to next node. These can serve as attributes of class Node
 class Node{
-    int data; //This datatype can be of any datatype
+    int data;//This datatype can be of any datatype
+    boolean visited;
     Node next; //Since this referencing to the same class Node Linked Lists are called Self referencing Data Structures
     Node(int x){ //Constructor
         data =x;
         next =null;
+        visited = false;
     }
 }
 
